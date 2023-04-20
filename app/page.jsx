@@ -8,7 +8,7 @@ const Page = async () => {
   return (
     <div className="container">
       <Form />
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Todos />
       </Suspense>
     </div>

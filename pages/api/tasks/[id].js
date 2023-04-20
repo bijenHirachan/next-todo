@@ -37,7 +37,7 @@ const handler = asyncErrorHandler(async (req, res) => {
   } else {
     res.status(401).json({
       success: false,
-      message: "This task doesn't belong to logged user",
+      error: "This task doesn't belong to logged user",
     });
   }
 });
